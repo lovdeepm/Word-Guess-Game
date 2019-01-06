@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>90's TGIF Sitcoms</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+        <div class="heading">
+            <h1>90's TGIF Sitcoms Word Guess</h1>
+        </div>
+
+        <div class="backround">
+            <div class="container">
+                <h3>Press Any Key to Start Game</h3>
+                <div>
+                    <img id="image" src="./assets/images/TGIF.jpg" alt="TGIF" width="40%" height="200">
+                </div>
+                        <!-- current word -->
+                <div>
+                    <h3 id="currentword">_ _ _ _ _ _</h3>
+                </div>
+                <div id="scoreboard">
+                        <!-- guesses -->
+                    <div class="sidebar">
+                        <h3> Guesses Left:
+                            <span id="guessesremaining"></span>
+                        </h3>
+                    </div>
+                    <!-- wins -->
+                <div class="sidebar">
+                    <h3>Wins: 
+                        <span id="winstracker"></span>
+                    </h3>
+                </div>
+                        <!-- losses -->
+                    <div class="sidebar">
+                        <h3>Losses:
+                            <span id="losstracker"></span>
+                        </h3>
+                    </div>
+                        <!-- Letters Guessed -->
+                <div class="sidebar">
+                        <h3>Letters You Guessed Wrong:
+                            <span id="playerguesses"></span>
+                        </h3>
+
+                </div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/javascript/game.js"></script>
+</body>
+</html>

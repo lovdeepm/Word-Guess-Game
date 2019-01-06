@@ -1,0 +1,61 @@
+body {
+    background-image: url("../images/tgif3.jpg");
+    width: 100%
+}
+
+.heading {
+    margin: 35px;
+    
+
+}
+
+h1 {
+    font-size: 30px;
+    border: solid 2px black;
+    background: white;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+img {
+    margin: 10px;
+}
+
+.sidebar {
+    padding: 5px;
+    position: relative;
+    border: solid 2px black
+}
+
+span {
+    border: solid black 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: bisque;
+    font-size: 15px;
+
+}
+
+.container {
+    background-color: white;
+    margin: 100px;
+    text-align: center;
+    border: solid 2px black
+}
+
+#currentword {
+    font-size: 20px;
+    margin: 10px;
+}
+
+#scoreboard {
+    padding: 20px;
+}
