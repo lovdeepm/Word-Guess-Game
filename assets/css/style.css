@@ -29,20 +29,11 @@ img {
     margin: 10px;
 }
 
-.sidebar {
-    padding: 5px;
-    position: relative;
-    border: solid 2px black
-}
-
-span {
+.numbers {
+    padding: 10px;
     border: solid black 2px;
-    padding-left: 8px;
-    padding-right: 8px;
-    background-color: bisque;
-    font-size: 15px;
-
 }
+
 
 .container {
     background-color: white;

@@ -11,8 +11,6 @@ var wins = 0;
 var losses = 0;
 var guessesRemaining = 6;
 
-
-
 function Game() {
 
             randomWord = words[Math.floor(Math.random() * words.length)];
@@ -27,15 +25,12 @@ function Game() {
 
             document.getElementById("currentword").innerHTML = " " + blanksandCorrect.join(" ");
 
-            console.log(randomWord);
-            console.log(lettersOfWord)
-            console.log(blanks)
-            console.log(blanksandCorrect)
-
+    console.log(randomWord);
+    console.log(lettersOfWord)
+    console.log(blanks)
+    console.log(blanksandCorrect)
 
 }
-
-
 
 function reset() {
     guessesRemaining = 6;
@@ -43,9 +38,6 @@ function reset() {
     blanksandCorrect = [];
     Game()
 }
-
-
-
 
 function checkLetters(letter) {
     var letterInWord = false;
@@ -71,12 +63,7 @@ function checkLetters(letter) {
 
 }
 
-
-
 function complete() {
-
-    console.log("wins:" + wins + "| losses:" + losses + "| guesses left:" + guessesRemaining)
-
 
     if (lettersOfWord.toString() === blanksandCorrect.toString()) {
 
@@ -87,7 +74,6 @@ function complete() {
     }  else if (guessesRemaining === 0) {
         losses++;
         reset()
-        document.getElementById("image").src = "./assets/images/tgif.jpg"
         document.getElementById("losstracker").innerHTML = " " + losses;
 
     }
@@ -96,9 +82,7 @@ function complete() {
 
 }
 
-
 Game()
-
 
 document.onkeyup = function (event) {
     var guesses = String.fromCharCode(event.keyCode).toLowerCase();
